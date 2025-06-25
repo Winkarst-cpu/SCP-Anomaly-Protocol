@@ -1,0 +1,10 @@
+"scpap"
+{
+    "base"          "base"
+    "title"         "SCP: Anomaly Protocol"
+    "maps"		    "^ap_"
+    "category"	    "other"
+    "menusystem"	"1"
+    "workshopid"	"0"
+    "author"        "winkarst"
+}
