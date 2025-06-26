@@ -1,11 +1,6 @@
 include("sh_init.lua")
 
--- Inspired by Parallax Framework.
-BaseLocalPlayer = BaseLocalPlayer or LocalPlayer
+SCP.LocalPlayer = SCP.LocalPlayer or LocalPlayer
 function LocalPlayer()
-    if ( IsValid(SCP.cachedClient) ) then
-        return SCP.cachedClient
-    end
-
-    return BaseLocalPlayer()
+    return IsValid(SCP.cachedClient) and SCP.cachedClient or SCP.LocalPlayer()
 end

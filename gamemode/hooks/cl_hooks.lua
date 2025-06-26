@@ -1,7 +1,7 @@
 function GM:InitPostEntity()
-    self.cachedClient = LocalPlayer()
+    SCP.cachedClient = LocalPlayer()
 end
 
-function GM:HUDShouldDraw()
-    return false
+function GM:HUDShouldDraw(name)
+    return name == "NetGraph"
 end
