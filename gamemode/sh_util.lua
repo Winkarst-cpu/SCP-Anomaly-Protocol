@@ -1,4 +1,4 @@
---- Utility functions
+--- Utility functions.
 -- @module SCP.Util
 SCP.Util = SCP.Util or {}
 
